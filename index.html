@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Profile Viewer</title>
+  <script async defer data-domain="ig-profileviewer.github.io" src="https://plausible.io/js/script.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background: #fff;
+      padding: 20px;
+      border-bottom: 1px solid #dbdbdb;
+    }
+    h1 {
+      margin: 0;
+      color: #262626;
+      font-size: 24px;
+    }
+    form {
+      margin-top: 40px;
+    }
+    input[type="text"] {
+      padding: 10px;
+      width: 250px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #3897f0;
+      border: none;
+      border-radius: 6px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    p {
+      color: #999;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Instagram Profile Viewer</h1>
+    <p>Enter any Instagram username to view public stats</p>
+  </header>
+  <main>
+    <form onsubmit="event.preventDefault(); alert('Searching… Please wait.');">
+      <input type="text" placeholder="Enter Instagram username" required />
+      <button type="submit">Search</button>
+    </form>
+    <p>This tool allows you to view account details, followers, and public stories anonymously.</p>
+  </main>
+</body>
+</html>
