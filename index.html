@@ -7,60 +7,66 @@
   <script async defer data-domain="ig-profileviewer.github.io" src="https://plausible.io/js/script.js"></script>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #fafafa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
       margin: 0;
       padding: 0;
       text-align: center;
+      color: #222;
     }
     header {
-      background: #fff;
-      padding: 20px;
-      border-bottom: 1px solid #dbdbdb;
+      background-color: #fff;
+      padding: 30px 20px;
+      border-bottom: 1px solid #e6e6e6;
     }
     h1 {
       margin: 0;
-      color: #262626;
-      font-size: 24px;
+      font-size: 28px;
+      color: #000;
     }
     form {
-      margin-top: 40px;
+      margin-top: 50px;
     }
     input[type="text"] {
-      padding: 10px;
-      width: 250px;
+      padding: 12px;
+      width: 280px;
       font-size: 16px;
       border: 1px solid #ccc;
-      border-radius: 6px;
+      border-radius: 8px;
+      outline: none;
     }
     button {
-      padding: 10px 20px;
+      padding: 12px 24px;
       font-size: 16px;
       color: #fff;
-      background-color: #3897f0;
+      background-color: #007aff;
       border: none;
-      border-radius: 6px;
+      border-radius: 8px;
       margin-left: 10px;
       cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    button:hover {
+      background-color: #005fce;
     }
     p {
-      color: #999;
-      font-size: 14px;
-      margin-top: 20px;
+      font-size: 15px;
+      margin-top: 25px;
+      color: #444;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Instagram Profile Viewer</h1>
-    <p>Enter any Instagram username to view public stats</p>
+    <p>View public account stats anonymously</p>
   </header>
   <main>
     <form onsubmit="event.preventDefault(); alert('Searching… Please wait.');">
       <input type="text" placeholder="Enter Instagram username" required />
       <button type="submit">Search</button>
     </form>
-    <p>This tool allows you to view account details, followers, and public stories anonymously.</p>
+    <p>This tool lets you check public data like followers and stories—no login required.</p>
   </main>
 </body>
 </html>
